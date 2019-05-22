@@ -14,8 +14,17 @@
 
 }
 h1 {
+  font-size: 96px;
   font-weight: 500 !important;
 } 
+@media only screen and (max-width: 670px) {
+  h1 {
+    font-size: 47px;
+  } 
+}
 #about img {
   max-width: 450px;
+  width: 80%;
 }
+
+
