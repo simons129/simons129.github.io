@@ -5,3 +5,17 @@
 .date {
   min-width: 18rem;
 }
+.logo {
+  width: 30px;
+}
+#about {
+  padding-top: 200px;
+  padding-bottom: 130px;
+
+}
+h1 {
+  font-weight: 500 !important;
+} 
+#about img {
+  max-width: 450px;
+}
