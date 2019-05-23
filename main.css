@@ -9,8 +9,7 @@
   width: 30px;
 }
 #about {
-  padding-top: 200px;
-  padding-bottom: 130px;
+  min-height: 100vh;
 
 }
 h1 {
@@ -25,6 +24,11 @@ h1 {
 #about img {
   max-width: 450px;
   width: 80%;
+  padding-top: 20vh;
+}
+
+.alert {
+  display: none;
 }
 
 
