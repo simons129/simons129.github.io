@@ -14,7 +14,7 @@
 }
 h1 {
   font-size: 96px;
-  font-weight: 500 !important;
+  font-weight: 500 ;
 } 
 @media only screen and (max-width: 670px) {
   h1 {
@@ -29,6 +29,13 @@ h1 {
 
 .alert {
   display: none;
+}
+.background {
+  background-image: url("background.jpg");
+  background-repeat: repeat;
+}
+.main {
+  background-color: #eeeeee;
 }
 
 
