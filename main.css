@@ -17,12 +17,12 @@
 }
 #about {
   min-height: 100vh;
-
 }
 h1 {
   font-size: 96px;
   font-weight: 500 ;
 } 
+
 h2 {
   font-size: 3rem !important;
   border-left: 6px solid;
@@ -33,6 +33,7 @@ h2 {
   border-left: none !important;
   padding-left: 0;
 }
+
 
 h3 {
   font-size: 2rem !important;
