@@ -9,6 +9,12 @@
 .date {
   min-width: 18rem;
 }
+.nav-link {
+  color: rgba(255,255,255,0.7);
+}
+button {
+  font-weight: 600 !important;
+}
 .logo {
   width: 30px;
 }
