@@ -1,5 +1,9 @@
+* {
+  font-size: 1.1rem;
+}
 .subheading {
   font-weight: 600;
+  font-size: 1.25rem !important;
 }
 
 .date {
@@ -16,10 +20,27 @@ h1 {
   font-size: 96px;
   font-weight: 500 ;
 } 
-@media only screen and (max-width: 670px) {
+h2 {
+  font-size: 3rem !important;
+  border-left: 6px solid;
+  border-image: linear-gradient(to bottom,  red, yellow) 1 100%;
+  padding-left: 6px;
+}
+#contact h2 {
+  border-left: none !important;
+  padding-left: 0;
+}
+
+h3 {
+  font-size: 2rem !important;
+}
+@media only screen and (max-width: 776px) {
   h1 {
     font-size: 47px;
   } 
+  #particles-js {
+    height: 0px !important;
+  }
 }
 #about img {
   max-width: 450px;
@@ -30,11 +51,6 @@ h1 {
 .alert {
   display: none;
 }
-.background {
-  background-image: url("background.jpg");
-  background-repeat: no-repeat;
-}
-.main {
-  background-color: #e9ecef;
-}
+
+
 
