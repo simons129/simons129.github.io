@@ -10,10 +10,10 @@
   min-width: 18rem;
 }
 .nav-link {
-  color: rgba(255,255,255,0.8) !important;
+  color: rgba(255,255,255,0.7) !important;
 }
 .active {
-  color: rgba(255,255,255,1) !important;
+  color: rgb(255,255,255) !important;
 }
 .logo {
   width: 30px;
