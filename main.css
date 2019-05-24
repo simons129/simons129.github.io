@@ -10,10 +10,7 @@
   min-width: 18rem;
 }
 .nav-link {
-  color: rgba(255,255,255,0.7);
-}
-.btn {
-  font-weight: 600 !important;
+  color: rgba(255,255,255,0.8);
 }
 .logo {
   width: 30px;
