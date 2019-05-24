@@ -12,6 +12,9 @@
 .nav-link {
   color: rgba(255,255,255,0.8) !important;
 }
+.active {
+  color: rgba(255,255,255,1) !important;
+}
 .logo {
   width: 30px;
 }
