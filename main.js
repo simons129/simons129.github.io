@@ -14,7 +14,7 @@ function handleSubmit(event) {
   var email = $('#email').val();
 
   var data = {
-    to: "servatka29@gmail.com",
+    to: "servatka.simon@gmail.com",
     subject: "Kontakt z simons129.github.io",
     body: msg,
     from: email
