@@ -22,12 +22,10 @@ function handleSubmit(event) {
 
   $.ajax({
     type: "POST",
-    url: "https://stored.azurewebsites.net/api/mail",
-    headers: {
-      "Authorization": 'Bearer ' + token
-    },
+    url: "https://api.mailgun.net/v3/sandboxc75aefad44944997aa50f26025a17c32.mailgun.org",
+    password: "fb35d36e923340462d31dfa00624883d-aa4b0867-a4bb0d55",
     data: JSON.stringify(data),
-    contentType: "application/json"
+    
   })
     .done(function () {
       console.log('OK');
