@@ -1,7 +1,7 @@
 window.onresize = function(){ location.reload(); }
 
 
-var token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOlsidXNlciIsIm1haWwiLCJzdG9yZSJdLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiNWM2MTBiNDlmZGE5ZGIyYzA4MGJmNDgzIiwiZXhwIjoxNTg2NjI4NTUwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjUwMDYxLyIsImF1ZCI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwNjEvIn0.sb_ybk24nafWoCSj9m3_pJ6FSxz0xf68E_exSZXRY2U';
+var token = 'api-8DE500367E8711EA8C9EF23C91BBF4A0';
 
 $(document).ready(function () {
   $("form").submit(handleSubmit);
@@ -14,17 +14,23 @@ function handleSubmit(event) {
   var email = $('#email').val();
 
   var data = {
+    api_key: token,
     to: "servatka.simon@gmail.com",
+    sender: email,
     subject: "Kontakt z simons129.github.io",
-    body: msg,
-    from: email
+    text_body: msg
   }
 
   $.ajax({
     type: "POST",
-    url: "https://api.mailgun.net/v3/sandboxc75aefad44944997aa50f26025a17c32.mailgun.org",
-    password: "fb35d36e923340462d31dfa00624883d-aa4b0867-a4bb0d55",
+    url: "https://api.smtp2go.com/v3/email/send",
     data: JSON.stringify(data),
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'text/plain',
+      'api_key': token
+  }
+
     
   })
     .done(function () {
