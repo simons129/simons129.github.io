@@ -182,6 +182,20 @@
       <div class="alert alert-warning text-center" role="alert">
         Správa nebola odoslaná. Skúste neskôr.
       </div>
+
+      <form action="https://formspree.io/xgeldavr" method="POST">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="msg">Message:</label>
+          <textarea class="form-control" rows="5" id="msg" name="sprava" required></textarea>
+        </div>
+        <button type="submit" value="Send" class="btn btn-outline-dark float-right">Odoslať</button>
+      </form>
+
+      <!--
       <form>
         <div class="form-group">
           <label for="email">Email:</label>
@@ -192,7 +206,7 @@
           <textarea class="form-control" rows="5" id="msg" required></textarea>
         </div>
         <button type="submit" class="btn btn-outline-dark float-right">Odoslať</button>
-      </form>
+      </form> -->
     </section>
   </div>
 

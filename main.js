@@ -4,7 +4,7 @@ window.onresize = function(){ location.reload(); }
 var token = 'api-8DE500367E8711EA8C9EF23C91BBF4A0';
 
 $(document).ready(function () {
-  $("form").submit(handleSubmit);
+  //$("form").submit(handleSubmit);
 });
 
 function handleSubmit(event) {
