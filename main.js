@@ -13,11 +13,13 @@ function handleSubmit(event) {
   var data = {
     email,msg
   }
+  data = $.param(data)
 
   $.ajax({
     type: "POST",
     url: "https://formspree.io/xgeldavr",
-    data: JSON.stringify(data) 
+    data: JSON.stringify(data),
+    header: {'Accept': 'application/json'}
   })
     .done(function () {
       console.log('OK');
