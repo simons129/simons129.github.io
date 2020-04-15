@@ -1,10 +1,7 @@
 window.onresize = function(){ location.reload(); }
 
-
-var token = 'api-8DE500367E8711EA8C9EF23C91BBF4A0';
-
 $(document).ready(function () {
-  //$("form").submit(handleSubmit);
+  $("form").submit(handleSubmit);
 });
 
 function handleSubmit(event) {
@@ -14,24 +11,13 @@ function handleSubmit(event) {
   var email = $('#email').val();
 
   var data = {
-    api_key: token,
-    to: "servatka.simon@gmail.com",
-    sender: email,
-    subject: "Kontakt z simons129.github.io",
-    text_body: msg
+    email,msg
   }
 
   $.ajax({
     type: "POST",
-    url: "https://api.smtp2go.com/v3/email/send",
-    data: JSON.stringify(data),
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'text/plain',
-      'api_key': token
-  }
-
-    
+    url: "https://formspree.io/xgeldavr",
+    data: JSON.stringify(data) 
   })
     .done(function () {
       console.log('OK');
